@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+	<ul id="test">
+		<li class="question">
+			JavaScript это тоже самое что и Java?
+			<ul>
+				<li><label><input type="checkbox" name="question1" data-true>Нет.</label></li>
+				<li><label><input type="checkbox" name="question1">Да.</label></li>
+				<li><label><input type="checkbox" name="question1">Когда как</label></li>
+			</ul>
+		</li>
+		
+		<li style="visibility: hidden;" class="question">
+			Сколько параментров можно передавать в фукнцию?
+			<ul>
+				<li><label><input type="checkbox" name="question2">Только столько, сколько указано при ее созданиию</label></li>
+				<li><label><input type="checkbox" name="question2">Минимум 1.</label></li>
+				<li><label><input type="checkbox" name="question2" data-true>Сколько угодно.</label></li>
+			</ul>
+		</li>
+		<li style="visibility: hidden;" class="question">
+			Что такое: "use strict"?
+			<ul>
+				<li><label><input type="checkbox" name="question3">Просто строка</label></li>
+				<li><label><input type="checkbox" name="question3">Функция</label></li>
+				<li><label><input type="checkbox" name="question3" data-true>Строгий режим</label></li>
+			</ul>
+		</li>
+	</ul>
+    <button onclick="goNext()" id="nextButton">Следующий вопрос</button>
+	<button style="visibility: hidden;" id="statButton" onclick="checkAnswers()">Проверить</button>    
+    <script src="WhoAmI.js"></script>
+</body>
+</html>
